@@ -15,16 +15,16 @@ import {
 import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
-function Buttons() {
+function OLBG() {
   return (
     <>
       <Helmet>
-        <title>Buttons - Components</title>
+        <title>OLBG</title>
       </Helmet>
       <PageTitleWrapper>
         <PageTitle
-          heading="Buttons"
-          subHeading="Buttons allow users to take actions, and make choices, with a single tap."
+          heading="OLBG"
+          subHeading="OLBG OLBG."
           docs="https://material-ui.com/components/buttons/"
         />
       </PageTitleWrapper>
@@ -214,4 +214,4 @@ function Buttons() {
   );
 }
 
-export default Buttons;
+export default OLBG;

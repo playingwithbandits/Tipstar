@@ -8,7 +8,9 @@ import { CssBaseline } from '@mui/material';
 import ThemeProvider from './theme/ThemeProvider';
 
 function App() {
-  const content = useRoutes(router);
+  const loggedIn = true;
+
+  const content = useRoutes(router(loggedIn));
 
   return (
     <ThemeProvider>

@@ -62,34 +62,36 @@ function Header() {
               )}`
       }}
     >
-      <Stack
+      {/* <Stack
         direction="row"
         divider={<Divider orientation="vertical" flexItem />}
         alignItems="center"
         spacing={2}
       >
         <HeaderMenu />
-      </Stack>
+      </Stack> */}
+      <Box
+        component="span"
+        sx={{
+          ml: 2,
+          display: { lg: 'none', xs: 'inline-block' }
+        }}
+      >
+        <Tooltip arrow title="Toggle Menu">
+          <IconButton color="primary" onClick={toggleSidebar}>
+            {!sidebarToggle ? (
+              <MenuTwoToneIcon fontSize="small" />
+            ) : (
+              <CloseTwoToneIcon fontSize="small" />
+            )}
+          </IconButton>
+        </Tooltip>
+      </Box>
+      <Box ml="auto" />
       <Box display="flex" alignItems="center">
-        <HeaderButtons />
+        {/* <HeaderButtons /> */}
+
         <HeaderUserbox />
-        <Box
-          component="span"
-          sx={{
-            ml: 2,
-            display: { lg: 'none', xs: 'inline-block' }
-          }}
-        >
-          <Tooltip arrow title="Toggle Menu">
-            <IconButton color="primary" onClick={toggleSidebar}>
-              {!sidebarToggle ? (
-                <MenuTwoToneIcon fontSize="small" />
-              ) : (
-                <CloseTwoToneIcon fontSize="small" />
-              )}
-            </IconButton>
-          </Tooltip>
-        </Box>
       </Box>
     </HeaderWrapper>
   );
